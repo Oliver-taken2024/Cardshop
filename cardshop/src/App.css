@@ -1,0 +1,36 @@
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+header p {
+  color: #a99579;
+}
+
+header input {
+  height: 30px;
+  width: 360px;
+}
+
+.Navbar {
+  display: flex;
+  display: none;
+  background-color: #61545e;
+  margin: 0px 0px 0px 0px;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-Link {
+  color: #d6cd85;
+  text-decoration: none;
+}
+
+.Setting {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .Navbar {
+    display: flex;
+  }
+}
