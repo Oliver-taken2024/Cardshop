@@ -14,9 +14,9 @@ function Header() {
         <input type="text" placeholder="Search" />
 
         <p className="Profile">Profile icon</p>
-
-        <p className="Cart">Cart icon</p>
-
+        <Link to="/Cart">
+          <p className="Cart">Cart icon</p>
+        </Link>
         <p className="Setting"> Inställningar</p>
       </header>
 

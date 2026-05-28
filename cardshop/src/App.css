@@ -33,4 +33,82 @@ header input {
   .Navbar {
     display: flex;
   }
+
+  .Product-detail {
+    display: flex;
+
+    gap: 50px;
+
+    padding: 50px;
+
+    align-items: flex-start;
+
+    background-color: #e7dde2;
+
+    min-height: 100vh;
+  }
+
+  .Product-image-container {
+    width: 350px;
+  }
+
+  .Product-image {
+    width: 100%;
+
+    border-radius: 10px;
+  }
+
+  .Product-info {
+    flex: 1;
+
+    max-width: 500px;
+  }
+
+  .Product-info h1 {
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 1.5rem;
+
+    line-height: 1.6;
+  }
+
+  .Buy-box {
+    background-color: #060608;
+
+    color: #d4c56b;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    width: 300px;
+  }
+
+  .Buy-box button {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: blue;
+
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+  }
+
+  .Pro-de {
+    font-size: 1.5rem;
+  }
 }

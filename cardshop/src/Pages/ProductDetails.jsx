@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 
 import { useParams } from "react-router-dom";
 
 function ProductDetails() {
   //är null för fetch har inte hunnit hämta data
   const [product, setProduct] = useState(null);
+
+  const { addToCart } = useContext(CartContext);
 
   const { id } = useParams();
 
@@ -26,13 +30,22 @@ function ProductDetails() {
       <div className="Product-info">
         <h1>{product.name}</h1>
 
+        <p className="Pro-de">
+          <strong>Product details</strong>
+        </p>
         <p className="description">{product.description}</p>
       </div>
 
       <div className="Buy-box">
-        <p>{product.condition}</p>
+        <p>
+          <strong>Condition:</strong> {product.condition}
+        </p>
 
-        <p>{product.price} kr</p>
+        <h2>{product.price} kr</h2>
+
+        <p>{product.quantity} in stock</p>
+
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
   );
