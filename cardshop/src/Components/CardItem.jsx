@@ -5,10 +5,13 @@ function CardItem({ card }) {
     <Link to={`/product/${card.id}`}>
       <div className="Card-item">
         <img src={card.image} alt={card.name} className="card-image" />
-        <h2>{card.name}</h2>
-        <p>
-          <strong>Price:</strong> {card.price} kr
-        </p>
+
+        <div className="Cart-info">
+          <h2>{card.name}</h2>
+          <p>
+            <strong>Price:</strong> {card.price} kr
+          </p>
+        </div>
       </div>
     </Link>
   );

@@ -7,9 +7,13 @@ import CartItem from "../Components/CartItem";
 import { Link } from "react-router-dom";
 
 function Cart() {
-  const { cart, removeFromCart } = useContext(CartContext);
+  const { cart, increaseQuantity, decreaseQuantity, removeFromCart } =
+    useContext(CartContext);
 
-  const totalprice = cart.reduce((total, item) => total + item.price, 0);
+  const totalprice = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0,
+  );
 
   return (
     <div className="Cart-page">
@@ -17,7 +21,13 @@ function Cart() {
 
       <div className="Cart-list">
         {cart.map((item) => (
-          <CartItem key={item.id} item={item} removeFromCart={removeFromCart} />
+          <CartItem
+            key={item.id}
+            item={item}
+            increaseQuantity={increaseQuantity}
+            decreaseQuantity={decreaseQuantity}
+            removeFromCart={removeFromCart}
+          />
         ))}
       </div>
       <div className="Cart-summary">

@@ -1,4 +1,9 @@
-function CartItem({ item, removeFromCart }) {
+function CartItem({
+  item,
+  increaseQuantity,
+  decreaseQuantity,
+  removeFromCart,
+}) {
   return (
     <div className="Cart-item">
       <img src={item.image} alt={item.name} className="Cart-image" />
@@ -7,10 +12,15 @@ function CartItem({ item, removeFromCart }) {
         <h2>{item.name}</h2>
 
         <p>{item.condition}</p>
-
+        <p>Quantity:{item.quantity}</p>
         <p>{item.price} kr</p>
       </div>
 
+      <div className="Quantity-controls">
+        <button onClick={() => decreaseQuantity(item.id)}>-</button>
+
+        <button onClick={() => increaseQuantity(item.id)}>+</button>
+      </div>
       <div className="Shipping-section">
         <button>Standard</button>
 

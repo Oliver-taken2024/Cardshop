@@ -38,6 +38,24 @@ function CartProvider({ children }) {
     setCart((prev) => prev.filter((item) => item.id !== id));
   };
 
+  const increaseQuantity = (id) => {
+    setCart((prev) =>
+      prev.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item,
+      ),
+    );
+  };
+
+  const decreaseQuantity = (id) => {
+    setCart((prev) =>
+      prev
+        .map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity - 1 } : item,
+        )
+        .filter((item) => item.quantity > 0),
+    );
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -45,6 +63,8 @@ function CartProvider({ children }) {
         addToCart,
         removeFromCart,
         clearCart,
+        increaseQuantity,
+        decreaseQuantity,
       }}
     >
       {children}
