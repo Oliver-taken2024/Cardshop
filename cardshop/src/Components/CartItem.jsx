@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function CartItem({ item, removeFromCart }) {
   return (
     <div className="Cart-item">
@@ -6,12 +8,22 @@ function CartItem({ item, removeFromCart }) {
       <div className="Cart-info">
         <h2>{item.name}</h2>
 
-        <p>{item.price} kr</p>
-
         <p>{item.condition}</p>
+
+        <p>{item.price} kr</p>
+      </div>
+
+      <div className="Shipping-section">
+        <button>Standard</button>
+
+        <button>Expedited</button>
       </div>
 
       <button onClick={() => removeFromCart(item.id)}>Remove</button>
+
+      <Link to="/checkout">
+        <button>Check Out</button>
+      </Link>
     </div>
   );
 }

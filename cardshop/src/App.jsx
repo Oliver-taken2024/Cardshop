@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import CardItem from "./Components/CardItem";
 import Cart from "./Pages/Cart";
 import ProductDetails from "./Pages/ProductDetails";
+import Checkout from "./Pages/Checkout";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Cart" element={<Cart cart={cart} />} />
         <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );
