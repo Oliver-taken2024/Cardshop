@@ -4,8 +4,6 @@ import PaymentForm from "../Components/PaymentForm";
 
 import SwishForm from "../Components/SwishForm";
 
-import OrderSummary from "../Components/OrderSummary";
-
 function Checkout() {
   const [paymentMethod, setPaymentMethod] = useState("card");
   return (
@@ -18,6 +16,7 @@ function Checkout() {
         <button onClick={() => setPaymentMethod("swish")}>Swish</button>
       </div>
 
+      {/* conditional rendering */}
       {paymentMethod === "card" && <PaymentForm />}
       {paymentMethod === "swish" && <SwishForm />}
     </div>

@@ -7,7 +7,7 @@ import CardItem from "./Components/CardItem";
 import Cart from "./Pages/Cart";
 import ProductDetails from "./Pages/ProductDetails";
 import Checkout from "./Pages/Checkout";
-
+import Confirmation from "./Pages/Confirmation";
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -31,6 +31,7 @@ function App() {
         <Route path="/Cart" element={<Cart cart={cart} />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
     </BrowserRouter>
   );
