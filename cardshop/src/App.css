@@ -136,19 +136,28 @@ header input {
 
     top: 20px;
   }
+  .Cart-list {
+    display: flex;
 
-  .Cart-items {
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .Cart-item {
     display: flex;
 
     justify-content: space-between;
 
     align-items: center;
 
-    background: black;
+    background: #060608;
 
     color: #d7c56d;
 
     padding: 25px;
+
+    margin-bottom: 20px;
 
     border-radius: 25px;
   }
@@ -196,5 +205,15 @@ header input {
     justify-content: space-between;
 
     margin: 20px 0;
+  }
+
+  .Customer-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
   }
 }

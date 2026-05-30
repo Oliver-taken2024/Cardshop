@@ -8,6 +8,7 @@ import Cart from "./Pages/Cart";
 import ProductDetails from "./Pages/ProductDetails";
 import Checkout from "./Pages/Checkout";
 import Confirmation from "./Pages/Confirmation";
+
 function App() {
   const [cart, setCart] = useState([]);
 

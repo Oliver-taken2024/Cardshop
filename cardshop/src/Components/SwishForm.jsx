@@ -1,10 +1,20 @@
 import { useNavigate } from "react-router-dom";
 
+import { useContext } from "react";
+
+import { CartContext } from "../Context/CartContext";
+
 function SwishForm() {
   const navigate = useNavigate();
 
+  const { cart, clearCart } = useContext(CartContext);
+
   const handleSwish = (e) => {
     e.preventDefault();
+
+    localStorage.setItem("lastOrder", JSON.stringify(cart));
+
+    clearCart();
 
     navigate("/confirmation");
   };

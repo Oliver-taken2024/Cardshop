@@ -4,6 +4,8 @@ import { CartContext } from "../Context/CartContext";
 
 import CartItem from "../Components/CartItem";
 
+import { Link } from "react-router-dom";
+
 function Cart() {
   const { cart, removeFromCart } = useContext(CartContext);
 
@@ -13,7 +15,7 @@ function Cart() {
     <div className="Cart-page">
       <h1>Cart</h1>
 
-      <div className="Cart-items">
+      <div className="Cart-list">
         {cart.map((item) => (
           <CartItem key={item.id} item={item} removeFromCart={removeFromCart} />
         ))}
@@ -29,6 +31,9 @@ function Cart() {
           <p>Subtotal</p>
           <p>{totalprice} kr</p>
         </div>
+        <Link to="/checkout">
+          <button>Check Out</button>
+        </Link>
       </div>
     </div>
   );

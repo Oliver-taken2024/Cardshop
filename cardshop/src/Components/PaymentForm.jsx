@@ -1,10 +1,20 @@
-import { Form, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+import { useContext } from "react";
+
+import { CartContext } from "../Context/CartContext";
 
 function PaymentForm() {
   const navigate = useNavigate();
 
+  const { cart, clearCart } = useContext(CartContext);
+
   const handlePayment = (e) => {
     e.preventDefault();
+
+    localStorage.setItem("lastOrder", JSON.stringify(cart));
+
+    clearCart();
 
     navigate("/confirmation");
   };

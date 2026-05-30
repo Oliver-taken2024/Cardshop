@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 function CartItem({ item, removeFromCart }) {
   return (
     <div className="Cart-item">
@@ -20,10 +18,6 @@ function CartItem({ item, removeFromCart }) {
       </div>
 
       <button onClick={() => removeFromCart(item.id)}>Remove</button>
-
-      <Link to="/checkout">
-        <button>Check Out</button>
-      </Link>
     </div>
   );
 }
