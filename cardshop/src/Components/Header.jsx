@@ -8,7 +8,7 @@ function Header() {
       <header
         style={{ display: "flex", gap: "20px", backgroundColor: "#060608" }}
       >
-        <Link to="/home">
+        <Link to="/">
           <img src={LogoImg} alt="Loga Image" style={{ width: "65px" }} />
         </Link>
         <input type="text" placeholder="Search" />

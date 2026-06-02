@@ -1,0 +1,179 @@
+.Hero {
+  height: 160px;
+
+  width: 400px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4)), url("/Assets/Hero.png");
+
+  background-size: cover;
+
+  background-position: center top;
+
+  background-repeat: no-repeat;
+}
+
+.Hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+
+  width: 90px;
+
+  height: 120px;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  max-width: 280px;
+}
+.Hero h1 {
+  color: white;
+
+  font-size: 0.75rem;
+
+  margin-bottom: 15px;
+}
+
+.Hero p {
+  color: #d7c56d;
+
+  font-size: 0.75rem;
+
+  margin-bottom: 20px;
+
+  line-height: 1;
+}
+
+.Hero button {
+  background: blue;
+
+  color: #e7dde2;
+
+  border: none;
+
+  padding: 8px 16px;
+
+  border-radius: 12px;
+
+  font-size: 0.7rem;
+
+  cursor: pointer;
+}
+
+@media (min-width: 425px) {
+  .Hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4)), url("/Assets/Hero.png");
+
+    width: 425px;
+
+    height: 150px;
+  }
+
+  .Hero-overlay {
+    max-width: 320px;
+
+    height: 110px;
+  }
+
+  .Hero h1 {
+    font-size: 0.75rem;
+    margin-top: 0px;
+  }
+
+  .Hero p {
+    font-size: 0.75rem;
+  }
+
+  .Hero button {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .Hero {
+    height: 240px;
+    width: 768px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6)), url("/Assets/Hero.png");
+
+    background-position: center top;
+  }
+
+  .Hero-overlay {
+    width: 260px;
+
+    height: 200px;
+  }
+
+  .Hero h1 {
+    font-size: 1.7rem;
+    margin-top: 0px;
+  }
+
+  .Hero p {
+    font-size: 1.3rem;
+  }
+
+  .Hero button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Hero {
+    height: 300px;
+
+    width: 1024px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6)), url("/Assets/Hero.png");
+
+    background-position: center top;
+  }
+
+  .Hero-overlay {
+    width: 240px;
+
+    height: 220px;
+
+    padding: 40px;
+  }
+
+  .Hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Hero {
+    height: 400px;
+    width: 1550px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.6)), url("/Assets/Hero.png");
+
+    background-position: center top;
+  }
+
+  .Hero-overlay {
+    max-width: 430px;
+
+    width: 430px;
+
+    height: 320px;
+  }
+
+  .Hero h1 {
+    font-size: 3.5rem;
+    margin-top: 0px;
+  }
+
+  .Hero p {
+    font-size: 2.5rem;
+  }
+
+  .Hero button {
+    font-size: 2.4rem;
+  }
+}

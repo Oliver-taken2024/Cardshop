@@ -28,7 +28,7 @@ function App() {
       <Routes>
         {/* Här ser route att värdet från Url har ändrats till menu/1 och den gör det dynamiskr */}
         <Route path="/menu/:categoryId" element={<Menu />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Cart" element={<Cart cart={cart} />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/checkout" element={<Checkout />} />
