@@ -1,0 +1,25 @@
+.Menu-page {
+  padding: 20px;
+}
+
+.Filter-button {
+  padding: 10px 20px;
+
+  background: #060608;
+
+  color: #d7c56d;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 200px;
+
+  height: 260px;
+}

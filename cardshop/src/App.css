@@ -49,24 +49,6 @@ header input {
   z-index: 1000;
 }
 
-.Menu-page {
-  padding: 20px;
-}
-
-.Filter-button {
-  padding: 10px 20px;
-
-  background: #060608;
-
-  color: #d7c56d;
-
-  border: none;
-
-  border-radius: 10px;
-
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .Navbar {
     display: flex;
@@ -330,10 +312,5 @@ header input {
     gap: 20px;
 
     margin-top: 30px;
-  }
-  .card-image {
-    width: 200px;
-
-    height: 260px;
   }
 }

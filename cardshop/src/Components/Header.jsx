@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import LogoImg from "/Assets/Loga1.png";
 import Home from "../Pages/Home";
 
+import "../header.css";
+
 function Header() {
   return (
     <div>

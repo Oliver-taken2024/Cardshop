@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import "../menu.css";
+
 import CardItem from "../Components/CardItem";
 
 function Menu() {

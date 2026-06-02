@@ -10,6 +10,37 @@ function Checkout() {
   const [name, setName] = useState("");
 
   const [email, setEmail] = useState("");
+
+  const [error, setError] = useState("");
+
+  // VALIDATION
+
+  const handleCheckout = () => {
+    // CHECK NAME
+
+    if (name.length < 2) {
+      setError("Please enter your name");
+
+      return;
+    }
+
+    // CHECK EMAIL
+
+    if (!email.includes("@")) {
+      setError("Please enter a valid email");
+
+      return;
+    }
+
+    // CLEAR ERROR
+
+    setError("");
+
+    // SUCCESS
+
+    alert("Proceeding to payment");
+  };
+
   return (
     <div>
       <h1>Checkout</h1>
@@ -31,6 +62,8 @@ function Checkout() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+
+        {error && <p className="Error">{error}</p>}
       </div>
 
       <div>
@@ -42,6 +75,8 @@ function Checkout() {
       {/* conditional rendering */}
       {paymentMethod === "card" && <PaymentForm />}
       {paymentMethod === "swish" && <SwishForm />}
+
+      <button onClick={handleCheckout}>Continue</button>
     </div>
   );
 }

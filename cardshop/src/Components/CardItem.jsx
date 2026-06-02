@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import "../menu.css";
+
 function CardItem({ card }) {
   return (
     <Link to={`/product/${card.id}`}>

@@ -28,7 +28,6 @@ function SwishForm() {
         pattern="[0-9]+" //gör så att man inte kan skriva in bokstäver
         required
       />
-      <button type="submit">Pay with Swish</button>
     </form>
   );
 }

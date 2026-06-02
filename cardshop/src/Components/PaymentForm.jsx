@@ -46,7 +46,6 @@ function PaymentForm() {
         pattern="[0-9]+"
         required
       />
-      <button type="submit">Complete Purchase</button>
     </form>
   );
 }
