@@ -4,6 +4,8 @@ import PaymentForm from "../Components/PaymentForm";
 
 import SwishForm from "../Components/SwishForm";
 
+import "../checkout.css";
+
 function Checkout() {
   const [paymentMethod, setPaymentMethod] = useState("card");
 
@@ -42,7 +44,7 @@ function Checkout() {
   };
 
   return (
-    <div>
+    <div className="check-main">
       <h1>Checkout</h1>
 
       <div className="Customer-info">

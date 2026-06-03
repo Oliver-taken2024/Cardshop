@@ -1,0 +1,133 @@
+header p {
+  color: #a99579;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #61545e;
+
+  padding: 10px 20px;
+
+  align-items: center;
+}
+
+.nav-Link {
+  display: flex;
+  color: #d6cd85;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header p {
+  color: #a99579;
+}
+
+.logo {
+  width: clamp(
+    80px,
+    10vw,
+    130px
+  ); /* ändra till större, t.ex. 150px eller 200px */
+  height: auto; /* behåller proportionerna */
+}
+
+.Profile {
+  margin-left: auto;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 80vw;
+  max-width: 300px;
+  height: 100vh;
+
+  background-color: #060608;
+  color: #d6cd85;
+
+  padding: 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transform: translateX(-100%);
+  transition: 0.3s;
+
+  overflow-y: auto;
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5);
+
+  z-index: 2000;
+}
+
+.set-menu {
+  display: none;
+  color: #dadada;
+  background-color: #060608;
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+
+  align-self: flex-end;
+  cursor: pointer;
+
+  color: #71d74f;
+
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .set-menu {
+    display: block;
+    font-size: 24px;
+  }
+  .Navbar {
+    display: none;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .nav-Link {
+    font-size: 18px;
+    color: #d6cd85;
+    text-decoration: none;
+    padding: 14px 5px;
+    border-bottom: 1px solid #222;
+  }
+
+  .nav-Link:hover {
+    color: #00ff88;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7); /* mörkare */
+
+    z-index: 1500;
+  }
+}

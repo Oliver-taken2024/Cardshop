@@ -1,7 +1,7 @@
 .Hero {
-  height: 160px;
+  height: auto;
 
-  width: 400px;
+  width: auto;
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4)), url("/Assets/Hero.png");
@@ -11,6 +11,11 @@
   background-position: center top;
 
   background-repeat: no-repeat;
+}
+.Home-page {
+  background-color: #e7dde2;
+
+  min-height: 100vh;
 }
 
 .Hero-overlay {
@@ -65,9 +70,9 @@
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4)), url("/Assets/Hero.png");
 
-    width: 425px;
+    width: auto;
 
-    height: 150px;
+    height: auto;
   }
 
   .Hero-overlay {
@@ -91,8 +96,8 @@
 }
 @media (min-width: 768px) {
   .Hero {
-    height: 240px;
-    width: 768px;
+    height: auto;
+    width: auto;
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6)), url("/Assets/Hero.png");
@@ -122,9 +127,9 @@
 
 @media (min-width: 1024px) {
   .Hero {
-    height: 300px;
+    height: auto;
 
-    width: 1024px;
+    width: auto;
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6)), url("/Assets/Hero.png");
@@ -147,8 +152,8 @@
 
 @media (min-width: 1440px) {
   .Hero {
-    height: 400px;
-    width: 1550px;
+    height: auto;
+    width: auto;
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.6)), url("/Assets/Hero.png");

@@ -4,8 +4,8 @@ import "../menu.css";
 
 function CardItem({ card }) {
   return (
-    <Link to={`/product/${card.id}`}>
-      <div className="Card-item">
+    <div className="Card-item">
+      <Link to={`/product/${card.id}`} className="card-link">
         <img src={card.image} alt={card.name} className="card-image" />
 
         <div className="Cart-info">
@@ -14,8 +14,8 @@ function CardItem({ card }) {
             <strong>Price:</strong> {card.price} kr
           </p>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
 

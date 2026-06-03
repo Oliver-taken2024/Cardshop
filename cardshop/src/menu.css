@@ -1,5 +1,7 @@
 .Menu-page {
   padding: 20px;
+  background-color: #e7dde2;
+  min-height: 100vh;
 }
 
 .Filter-button {
@@ -21,5 +23,81 @@
 .card-image {
   width: 200px;
 
-  height: 260px;
+  height: auto;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.Card-item {
+  background-color: #61545e;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+
+  display: flex; /* viktigt */
+  gap: 15px;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.Cart-info h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #d7c56d;
+}
+
+.Cart-info p {
+  margin-top: 8px;
+
+  font-size: 15px;
+  color: #d7c56d;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Card-item {
+    max-width: 100%;
+
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-image {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
