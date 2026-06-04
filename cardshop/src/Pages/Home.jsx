@@ -14,7 +14,6 @@ function Home() {
         const shuffled = data.sort(() => 0.5 - Math.random());
         setCards(shuffled.slice(0, 6));
         // första 6 korten
-        setCards(popular);
       });
   }, []);
 
