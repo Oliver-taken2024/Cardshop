@@ -17,10 +17,186 @@
       "name": "Pikachu",
       "price": 2000,
       "image": "/Assets/Pik.png",
-      "condition": " near mint",
+      "condition": "near mint",
       "language": "english",
       "quantity": 1,
       "description": "Ability: Resolute Heart If this Pokémon has full HP and would be Knocked Out by damage from an attack, it is not Knocked Out, and its remaining HP becomes 10."
+    },
+    {
+      "id": 3,
+      "category": 2,
+      "name": "Winter orb",
+      "price": 90,
+      "image": "/Assets/Winter.png",
+      "condition": "near mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "As long as Winter Orb is untapped, players can't untap more than one land during their untap steps."
+    },
+    {
+      "id": 4,
+      "category": 2,
+      "name": "Iona, Shield of Emeria",
+      "price": 60,
+      "image": "/Assets/Iona.png",
+      "condition": "mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "Flying: As Iona, Shield of Emeria enters the battlefield, choose a color.Your opponents can't cast spells of the chosen color."
+    },
+    {
+      "id": 5,
+      "category": 2,
+      "name": "Cyclonic Rift",
+      "price": 420,
+      "image": "/Assets/Rift.png",
+      "condition": "near mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "Return target nonland permanent you don't control to its owner's hand. Overload 6U (You may cast this spell for its overload cost. If you do, change its text by replacing all instances of 'target' with 'each'.)"
+    },
+    {
+      "id": 6,
+      "category": 2,
+      "name": "Notion Thief",
+      "price": 13,
+      "image": "/Assets/Thief.png",
+      "condition": "mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "Flash: If an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card."
+    },
+    {
+      "id": 7,
+      "category": 2,
+      "name": "Paradox Engine",
+      "price": 74,
+      "image": "/Assets/Paradox.png",
+      "condition": "mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "Whenever you cast a spell, untap all nonland permanents you control."
+    },
+    {
+      "id": 8,
+      "category": 2,
+      "name": "Sol Ring",
+      "price": 14,
+      "image": "/Assets/Ring.png",
+      "condition": "mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "tap: add to none color mana "
+    },
+    {
+      "id": 9,
+      "category": 3,
+      "name": "Maxx C",
+      "price": 40,
+      "image": "/Assets/C.png",
+      "condition": "mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "During either player's turn: You can send this card from your hand to the Graveyard; this turn, each time your opponent Special Summons a monster(s), immediately draw 1 card. You can only use 1 'Maxx 'C'' per turn. "
+    },
+    {
+      "id": 10,
+      "category": 3,
+      "name": "Mystic Mine",
+      "price": 5,
+      "image": "/Assets/Mine.png",
+      "condition": "mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "If your opponent controls more monsters than you do, your opponent cannot activate monster effects or declare an attack. If you control more monsters than your opponent does, you cannot activate monster effects or declare an attack. Once per turn, during the End Phase, if both players control the same number of monsters: Destroy this card."
+    },
+    {
+      "id": 11,
+      "category": 3,
+      "name": "Red-Eyes Dark Dragoon",
+      "price": 760,
+      "image": "/Assets/Dragoon.png",
+      "condition": "mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "'Dark Magician' + 'Red-Eyes Black Dragon' or 1 Dragon Effect Monster: Cannot be destroyed by card effects. Neither player can target this card with card effects. During your Main Phase: You can destroy 1 monster your opponent controls, and if you do, inflict damage to your opponent equal to that monster's original ATK. You can use this effect a number of times per turn up to the number of Normal Monsters used as Fusion Material for this card. Once per turn, when a card or effect is activated (Quick Effect): You can discard 1 card; negate the activation, and if you do, destroy that card, and if you do that, this card gains 1000 ATK."
+    },
+    {
+      "id": 12,
+      "category": 3,
+      "name": "Dimension Shifter",
+      "price": 2,
+      "image": "/Assets/Shifter.png",
+      "condition": "near mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "If you have no cards in your GY (Quick Effect): You can send this card from your hand to the GY; until the end of the next turn, any card sent to the GY is banished instead."
+    },
+    {
+      "id": 13,
+      "category": 3,
+      "name": "Pot of Greed",
+      "price": 47,
+      "image": "/Assets/Pot.png",
+      "condition": "near mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "Draw 2 cards."
+    },
+    {
+      "id": 14,
+      "category": 1,
+      "name": "Chandelure",
+      "price": 42,
+      "image": "/Assets/Chandelure.png",
+      "condition": "near mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "Ability — Mountain Toasting : When you play this Pokemon from your hand to evolve 1 of your Pokemon during your turn, you may discard the top 3 cards of your opponent's deck."
+    },
+    {
+      "id": 15,
+      "category": 1,
+      "name": "Charizard",
+      "price": 6968,
+      "image": "/Assets/Charizard.png",
+      "condition": "mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "Attack 1:[R] Brave Wing (60+): if this Pokemon has any damage counters on it, this attack does 100 more damage. Attack 2:[RRRR] Explosive Vortex (330): Discard 3 Energy from this Pokemon."
+    },
+    {
+      "id": 16,
+      "category": 1,
+      "name": "Magikarp",
+      "price": 4610,
+      "image": "/Assets/Magi.png",
+      "condition": "mint",
+      "language": "english",
+      "quantity": 1,
+      "description": "[W] Expert Splasher (10+) Flip 2 coins. If both of them are heads, this attack does 20 more damage."
+    },
+    {
+      "id": 17,
+      "category": 1,
+      "name": "Groudon",
+      "price": 330,
+      "image": "/Assets/Groudon.png",
+      "condition": "near mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "Attack 1:[Colorless] Swelling Power: Attach a Basic Fighting Energy card from your hand to 1 of your Pokémon. Attack 2:[Fighting][Fighting][Colorless] Magma Purge (60x): Discard up to 4 Energy from your Pokémon. This attack does 60 damage for each card you discarded in this way."
+    },
+    {
+      "id": 18,
+      "category": 1,
+      "name": "Mega Greninja",
+      "price": 3820,
+      "image": "/Assets/Gren.png",
+      "condition": "near mint",
+      "language": "japanese",
+      "quantity": 1,
+      "description": "Ability: Mortal Shuriken Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon."
     }
   ]
 }
