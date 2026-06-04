@@ -14,13 +14,13 @@
     {
       "id": 2,
       "category": 1,
-      "name": "Pikachu",
-      "price": 2000,
-      "image": "/Assets/Pik.png",
+      "name": "Mega Greninja",
+      "price": 3820,
+      "image": "/Assets/Gren.png",
       "condition": "near mint",
-      "language": "english",
+      "language": "japanese",
       "quantity": 1,
-      "description": "Ability: Resolute Heart If this Pokémon has full HP and would be Knocked Out by damage from an attack, it is not Knocked Out, and its remaining HP becomes 10."
+      "description": "Ability: Mortal Shuriken Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon."
     },
     {
       "id": 3,
@@ -35,14 +35,14 @@
     },
     {
       "id": 4,
-      "category": 2,
-      "name": "Iona, Shield of Emeria",
-      "price": 60,
-      "image": "/Assets/Iona.png",
+      "category": 3,
+      "name": "Red-Eyes Dark Dragoon",
+      "price": 760,
+      "image": "/Assets/Dragoon.png",
       "condition": "mint",
       "language": "english",
       "quantity": 1,
-      "description": "Flying: As Iona, Shield of Emeria enters the battlefield, choose a color.Your opponents can't cast spells of the chosen color."
+      "description": "'Dark Magician' + 'Red-Eyes Black Dragon' or 1 Dragon Effect Monster: Cannot be destroyed by card effects. Neither player can target this card with card effects. During your Main Phase: You can destroy 1 monster your opponent controls, and if you do, inflict damage to your opponent equal to that monster's original ATK. You can use this effect a number of times per turn up to the number of Normal Monsters used as Fusion Material for this card. Once per turn, when a card or effect is activated (Quick Effect): You can discard 1 card; negate the activation, and if you do, destroy that card, and if you do that, this card gains 1000 ATK."
     },
     {
       "id": 5,
@@ -112,14 +112,14 @@
     },
     {
       "id": 11,
-      "category": 3,
-      "name": "Red-Eyes Dark Dragoon",
-      "price": 760,
-      "image": "/Assets/Dragoon.png",
+      "category": 2,
+      "name": "Iona, Shield of Emeria",
+      "price": 60,
+      "image": "/Assets/Iona.png",
       "condition": "mint",
       "language": "english",
       "quantity": 1,
-      "description": "'Dark Magician' + 'Red-Eyes Black Dragon' or 1 Dragon Effect Monster: Cannot be destroyed by card effects. Neither player can target this card with card effects. During your Main Phase: You can destroy 1 monster your opponent controls, and if you do, inflict damage to your opponent equal to that monster's original ATK. You can use this effect a number of times per turn up to the number of Normal Monsters used as Fusion Material for this card. Once per turn, when a card or effect is activated (Quick Effect): You can discard 1 card; negate the activation, and if you do, destroy that card, and if you do that, this card gains 1000 ATK."
+      "description": "Flying: As Iona, Shield of Emeria enters the battlefield, choose a color.Your opponents can't cast spells of the chosen color."
     },
     {
       "id": 12,
@@ -190,13 +190,13 @@
     {
       "id": 18,
       "category": 1,
-      "name": "Mega Greninja",
-      "price": 3820,
-      "image": "/Assets/Gren.png",
+      "name": "Pikachu",
+      "price": 2000,
+      "image": "/Assets/Pik.png",
       "condition": "near mint",
-      "language": "japanese",
+      "language": "english",
       "quantity": 1,
-      "description": "Ability: Mortal Shuriken Once during your turn, if this Pokémon is in the Active Spot, you may discard a Basic Water Energy card from your hand in order to use this Ability. Place 6 damage counters on 1 of your opponent's Pokémon."
+      "description": "Ability: Resolute Heart If this Pokémon has full HP and would be Knocked Out by damage from an attack, it is not Knocked Out, and its remaining HP becomes 10."
     }
   ]
 }

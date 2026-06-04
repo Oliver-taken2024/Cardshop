@@ -14,8 +14,19 @@
 }
 .Home-page {
   background-color: #e7dde2;
-
+  padding: 20px;
   min-height: 100vh;
+}
+
+.home-title {
+  margin: 20px;
+  color: #d7c56d;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .Hero-overlay {
