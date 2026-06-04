@@ -1,3 +1,5 @@
+import "../cart.css";
+
 function CartItem({
   item,
   increaseQuantity,
@@ -16,18 +18,15 @@ function CartItem({
         <p>{item.price} kr</p>
       </div>
 
-      <div className="Quantity-controls">
-        <button onClick={() => decreaseQuantity(item.id)}>-</button>
+      <div className="Cart-actions">
+        <div className="Quantity-controls">
+          <button onClick={() => decreaseQuantity(item.id)}>-</button>
 
-        <button onClick={() => increaseQuantity(item.id)}>+</button>
+          <button onClick={() => increaseQuantity(item.id)}>+</button>
+        </div>
+
+        <button onClick={() => removeFromCart(item.id)}>Remove</button>
       </div>
-      <div className="Shipping-section">
-        <button>Standard</button>
-
-        <button>Expedited</button>
-      </div>
-
-      <button onClick={() => removeFromCart(item.id)}>Remove</button>
     </div>
   );
 }

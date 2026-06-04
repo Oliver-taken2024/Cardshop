@@ -1,7 +1,84 @@
 .check-main {
   background-color: #e7dde2;
+
+  min-height: 100vh;
+
+  padding: 40px;
+
+  max-width: 900px;
+  margin: 0 auto; /* centrera ✅ */
+}
+
+.Customer-info {
+  background: #060608;
+  color: #d7c56d;
+
+  padding: 20px;
+  border-radius: 15px;
+
+  margin-bottom: 20px;
+}
+
+.Customer-info input,
+.Payment-form input {
+  width: 100%;
+
+  padding: 12px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  border: none;
+
+  font-size: 16px;
 }
 
 .check-main button {
-  padding: 10px;
+  padding: 10px 15px;
+  margin-right: 10px;
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  background-color: #e7dde2;
+}
+
+button.active {
+  background: blue;
+  color: white;
+}
+
+.Error {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .check-main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .Customer-info {
+    padding: 15px;
+  }
+
+  .check-main button {
+    width: 100%; /* knappar fyller bredd ✅ */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Customer-info input,
+  .Payment-form input {
+    font-size: 14px;
+  }
 }

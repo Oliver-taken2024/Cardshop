@@ -1,0 +1,161 @@
+.Cart-back {
+  background-color: #e7dde2;
+
+  min-height: 100vh;
+
+  padding: 20px;
+}
+
+.Cart-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.Cart-page {
+  display: flex;
+
+  gap: 30px;
+
+  padding: 40px;
+
+  align-items: flex-start;
+}
+
+.Quantity-controls {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+.Quantity-controls button {
+  width: 40px;
+
+  height: 40px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}
+
+.Shipping-section button,
+.Cart-summary button {
+  background: blue;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.Cart-summary {
+  width: 300px;
+
+  background: black;
+
+  color: #d7c56d;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  position: sticky;
+
+  top: 20px;
+}
+
+.Cart-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.Cart-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #060608;
+
+  color: #d7c56d;
+
+  padding: 25px;
+
+  margin-bottom: 20px;
+
+  border-radius: 25px;
+}
+
+.Cart-image {
+  width: 120px;
+
+  height: 160px;
+
+  object-fit: cover;
+}
+
+.Cart-info {
+  flex: 1;
+
+  margin-left: 30px;
+}
+
+.Cart-actions {
+  display: flex;
+  flex-direction: column; /* ✅ detta fixar */
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .Cart-content {
+    flex-direction: column; /* ✅ stapla */
+  }
+
+  .Cart-summary {
+    width: 100%;
+    position: static; /* ✅ ta bort sticky */
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .Cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Cart-image {
+    width: 180px;
+    height: auto;
+  }
+
+  .Cart-info {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden; /* ✅ tar bort sid-scroll */
+  }
+}
+
+@media (max-width: 1024px) {
+  .Cart-summary {
+    width: 250px;
+  }
+}

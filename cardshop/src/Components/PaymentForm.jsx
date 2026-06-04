@@ -4,6 +4,8 @@ import { useContext } from "react";
 
 import { CartContext } from "../Context/CartContext";
 
+import "../checkout.css";
+
 function PaymentForm() {
   const navigate = useNavigate();
 

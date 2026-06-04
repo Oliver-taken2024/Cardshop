@@ -16,9 +16,9 @@ function Header() {
           <img src={LogoImg} alt="Loga Image" className="logo" />
         </Link>
 
-        <p className="Profile">Profile icon</p>
+        <p className="icon">👤</p>
         <Link to="/Cart">
-          <p className="Cart">Cart icon</p>
+          <p className="icon">🛒</p>
         </Link>
         <button onClick={() => setMenuOpen(true)} className="set-menu">
           ☰

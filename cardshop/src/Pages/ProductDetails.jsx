@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 function ProductDetails() {
   //är null för fetch har inte hunnit hämta data
   const [product, setProduct] = useState(null);
+  const [added, setAdded] = useState(false);
 
   const { addToCart } = useContext(CartContext);
 
@@ -45,7 +46,19 @@ function ProductDetails() {
 
         <p>{product.quantity} in stock</p>
 
-        <button onClick={() => addToCart(product)}>Add to Cart</button>
+        <button
+          onClick={() => {
+            addToCart(product);
+            setAdded(true);
+
+            setTimeout(() => {
+              setAdded(false);
+            }, 2000); // 2 seconds
+          }}
+        >
+          Add to Cart
+        </button>
+        {added && <div className="cart-toast">✅ Added to cart</div>}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { useNavigate } from "react-router-dom";
 import PaymentForm from "../Components/PaymentForm";
 
 import SwishForm from "../Components/SwishForm";
@@ -14,6 +15,8 @@ function Checkout() {
   const [email, setEmail] = useState("");
 
   const [error, setError] = useState("");
+
+  const navigate = useNavigate();
 
   // VALIDATION
 
@@ -38,9 +41,9 @@ function Checkout() {
 
     setError("");
 
-    // SUCCESS
+    // // SUCCESS
 
-    alert("Proceeding to payment");
+    navigate("/confirmation");
   };
 
   return (

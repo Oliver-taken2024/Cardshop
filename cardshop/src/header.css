@@ -1,7 +1,11 @@
 header p {
   color: #a99579;
 }
-
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: auto;
+}
 .Navbar {
   display: flex;
   justify-content: space-between;
@@ -30,10 +34,6 @@ header p {
     130px
   ); /* ändra till större, t.ex. 150px eller 200px */
   height: auto; /* behåller proportionerna */
-}
-
-.Profile {
-  margin-left: auto;
 }
 
 .mobile-menu {

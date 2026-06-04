@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "../home.css";
 
 function Hero() {
@@ -7,8 +9,9 @@ function Hero() {
         <h1>Rare Trading Cards</h1>
 
         <p>Pokemon, Yu-Gi-Oh, One Piece and more</p>
-
-        <button>Shop Now</button>
+        <Link to="/menu/3">
+          <button>Shop Now</button>
+        </Link>
       </div>
     </section>
   );
